@@ -13,10 +13,11 @@ public class TesterLab1 {
     public static void main(String[] args){
         ProblemaLab1 solucion = new ProblemaLab1();
         
-        short numRiesgos = 2;
+        short nFactores = 5;
         String mensaje;
         
-        mensaje = solucion.vacunaRiesgos(numRiesgos);
+        mensaje = solucion.vacunaRiesgos(nFactores);
         
+        System.out.println(mensaje);
     }
 }
