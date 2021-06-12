@@ -5,8 +5,6 @@
  */
 package Semana4Trabajos;
 
-import java.util.Scanner;
-
 /**
  *
  * @author Jostin Mora
