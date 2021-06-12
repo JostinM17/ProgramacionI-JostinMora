@@ -12,12 +12,24 @@ import java.util.Scanner;
  * @author Jostin Mora
  */
 public class ProblemaLab1 {
-    public static void main (String[] args){
-        
-        Scanner escaner = new Scanner(System.in);
-        System.out.println("Digite cuantos factores de riesgo: ");
-        int numriesgos;
-    
-        
+
+    /**
+     * Este metodo te dice que dia te vacunan:
+     * @param numRiesgos
+     * @return
+     */
+    public String vacunaRiesgos(short numRiesgos){
+        String resultado;
+       
+        if (numRiesgos == 1){
+            resultado = "1 SEMANA";
+        }
+        else if(numRiesgos == 2){
+            resultado = "3 DIAS";
+        }
+        else{
+            resultado= "DIA SIGUIENTE";
+        }
+        return resultado;
     }
 }
