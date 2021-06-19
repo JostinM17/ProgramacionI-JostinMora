@@ -20,7 +20,6 @@ public class Quiz1 {
      */
     public float pizza(int ingredientes){
         float resultado;
-        
         resultado = ingredientes ; 
         return resultado;
     }
