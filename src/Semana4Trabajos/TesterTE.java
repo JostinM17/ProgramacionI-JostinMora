@@ -11,7 +11,7 @@ package Semana4Trabajos;
  */
 public class TesterTE {
     public static void main(String[] args) {
-        Solucion6TE s = new Solucion6TE();
+        Solucion1TE s = new Solucion1TE();
         double r = s.calcularImpuesto(1, 1000000);
         System.out.println(r);
         
