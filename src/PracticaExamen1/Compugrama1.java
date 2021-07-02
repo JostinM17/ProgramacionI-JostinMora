@@ -15,10 +15,10 @@ public class Compugrama1 {
         int n=0;
         
         while(n<4){
-            System.out.print("-");
+            System.out.print("-\t");
             n++;
         }
-        for(int i=0; i<1;i++){
+        for(int i=0; i<1; i++){
             System.out.print(">");
         }
         System.out.println();
