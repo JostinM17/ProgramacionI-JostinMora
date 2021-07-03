@@ -26,7 +26,8 @@ public class Examen1 {
         while(true){
             System.out.println("Menu Dinamico \n1)Digitar datos de la empresa \n2)"
                     + "Imprimir la informacion de la empresa\n3)"
-                    + "Cantidad de personas por provincia\n4)Imprimir monto de prestamo y ajuste\n5)"
+                    + "Cantidad de personas por provincia\n4)"
+                    + "Imprimir monto de prestamo y ajuste\n5)"
                     + "Estado inicial");
             int opcion = escaner.nextInt();
             
@@ -56,9 +57,17 @@ public class Examen1 {
                     System.out.println("Informacion completa de la empresa: "
                             +"\n "+nombreDeEmpresa+"\n "+provincia+"\n"+cantTrabTotl+"\n"+cantTrabCovid
                             +"\n"+montoProm+"\n"+creditos+"\n");
+                    
+                    if(cantTrabCovid>20){
+                        System.out.println("¡¡¡ALERTA!!!\n");
+                    }
                     break;
                 }
                 case 3:{
+                      int cantPerProv =0;
+                      if(){ 
+                          cantPerProv=1404242;
+                      }
                     break;
                 }
                 case 4:{
