@@ -65,7 +65,7 @@ public class Examen1 {
                     break;
                 }
                 case 3:{
-                    System.out.println("La cantidad de personas en esta provincia es: \n"+provincia+" "+cantPerProv);
+                    
                     if(provincia.equals("SanJose")){
                         cantPerProv=1404242;
                     }
@@ -87,6 +87,7 @@ public class Examen1 {
                     else if(provincia.equals("Limon")){
                         cantPerProv=386862;
                     }
+                    System.out.println("La cantidad de personas en esta provincia es: \n"+provincia+" "+cantPerProv);
                     break;
                 }
                 case 4:{
@@ -109,7 +110,13 @@ public class Examen1 {
                     break;
                 }
                 case 5:{
-                    
+                    nombreDeEmpresa = "";
+                    provincia = "";
+                    cantTrabTotl = 0;
+                    cantTrabCovid = 0;
+                    montoProm = 0;
+                    creditos = false;
+                    cantPerProv = 0;
                     break;
                 }
             }
