@@ -20,6 +20,7 @@ public class Examen1 {
         int cantTrabCovid = 0;
         int montoProm = 0;
         boolean creditos = false;
+        int cantPerProv = 0;
 
         Scanner escaner = new Scanner(System.in);
         
@@ -64,7 +65,7 @@ public class Examen1 {
                     break;
                 }
                 case 3:{
-                    int cantPerProv = 0;
+                    System.out.println("La cantidad de personas en esta provincia es: \n"+provincia+" "+cantPerProv);
                     if(provincia.equals("SanJose")){
                         cantPerProv=1404242;
                     }
@@ -89,9 +90,22 @@ public class Examen1 {
                     break;
                 }
                 case 4:{
+                    int numTrab = 0;
+                    float tasaInt = 0;
                     int montPrest = 0;
                     
+                    System.out.println("El monto de prestamo seria: \n");
+                    montPrest = cantTrabCovid * cantPerProv / cantTrabTotl;
                     
+                    if(10>=numTrab){
+                        tasaInt=0.5f;  
+                    }
+                    else if(30>numTrab){
+                        tasaInt=0.4f;  
+                    }
+                    else if(30>=numTrab){
+                        tasaInt=0.3f;  
+                    }
                     break;
                 }
                 case 5:{
@@ -101,5 +115,4 @@ public class Examen1 {
             }
         }
     }
-    
 }
