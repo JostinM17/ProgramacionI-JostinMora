@@ -64,19 +64,19 @@ public class Examen1 {
                     break;
                 }
                 case 3:{
-                      int cantPerProv =0;
-                      if(){ 
+                    int cantPerProv =0;
+                    if(){ 
                           cantPerProv=1404242;
                       }
                     break;
                 }
                 case 4:{
+                    int montPrest = 0;
+                    
                     break;
                 }
                 case 5:{
-                    break;
-                }
-                case 6:{
+                    
                     break;
                 }
             }
