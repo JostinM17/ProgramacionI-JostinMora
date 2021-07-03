@@ -64,14 +64,33 @@ public class Examen1 {
                     break;
                 }
                 case 3:{
-                    int cantPerProv =0;
-                    if(){ 
-                          cantPerProv=1404242;
-                      }
+                    int cantPerProv = 0;
+                    if(provincia.equals("SanJose")){
+                        cantPerProv=1404242;
+                    }
+                    else if(provincia.equals("Alajuela")){
+                        cantPerProv=848146;
+                    }
+                    else if(provincia.equals("Cartago")){
+                        cantPerProv=490903;
+                    }
+                    else if(provincia.equals("Heredia")){
+                        cantPerProv=433677;
+                    }
+                    else if(provincia.equals("Guanacaste")){
+                        cantPerProv=326953;
+                    }
+                    else if(provincia.equals("Puntarenas")){
+                        cantPerProv=410929;
+                    }
+                    else if(provincia.equals("Limon")){
+                        cantPerProv=386862;
+                    }
                     break;
                 }
                 case 4:{
                     int montPrest = 0;
+                    
                     
                     break;
                 }
