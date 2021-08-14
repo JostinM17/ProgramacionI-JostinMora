@@ -13,18 +13,22 @@ import Poo.Mvc.*;
  */
 public class Nota {
     private double[] arregloNotas;
+    private String[] arregloCiclos;
     private int indice;
 
-    public Nota(int cantidadDeEstudiantes) {
-        arregloNotas = new double[cantidadDeEstudiantes];
+    public Nota(int cantidadDeNotas) {
+        arregloNotas = new double[cantidadDeNotas];
+        arregloCiclos = new String[cantidadDeNotas];
         indice = 0;
     }
 
-    public void agregarNota(double notaEstudiante) {
+    public void agregarNota(double notaEstudiante, String ciclo) {
         try {
         
             try {
-                arregloNotas[indice++] = notaEstudiante;
+                arregloNotas[indice] = notaEstudiante;
+                arregloCiclos[indice] = ciclo;
+                indice++;
                 
                 
                 //arregloNotas[indice] = notaEstudiante;
@@ -32,7 +36,7 @@ public class Nota {
 
             } catch (ArrayIndexOutOfBoundsException ae) {
                 System.out.println("demasiados datos para el vector de quices");
-                indice--;
+               //indice--;
             } 
         }
         catch(Exception e){
@@ -47,6 +51,11 @@ public class Nota {
     public double getNota(int i) {
         return arregloNotas[i];
     }
+    
+    public double getCiclo(int i) {
+        return arregloNotas[i];
+    }
+    
 
     public double[] getArregloNotas() {
         return arregloNotas;
@@ -54,5 +63,13 @@ public class Nota {
 
     public void setArregloNotas(double[] arregloNotas) {
         this.arregloNotas = arregloNotas;
+    }
+    
+    public String[] getArregloCiclos() {
+        return arregloCiclos;
+    }
+
+    public void setArregloCiclos(String[] arregloNotas) {
+        this.arregloCiclos = arregloCiclos;
     }
 }

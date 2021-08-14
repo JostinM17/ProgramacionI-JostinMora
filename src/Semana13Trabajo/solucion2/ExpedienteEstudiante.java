@@ -3,26 +3,28 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Poo.Mvc;
+package Semana13Trabajo.solucion2;
+
+import Poo.Mvc.*;
 
 /**
  *
  * @author Jostin Mora
  */
-public class Nota {
-    private double[] arregloNotas;
+public class ExpedienteEstudiante {
+    private CursoEstudiante[] arregloNotas;
     private int indice;
 
-    public Nota(int cantidadDeEstudiantes) {
-        arregloNotas = new double[cantidadDeEstudiantes];
+    public ExpedienteEstudiante(int cantidadDeNotas) {
+        arregloNotas = new CursoEstudiante[cantidadDeNotas];
         indice = 0;
     }
 
-    public void agregarNota(double notaEstudiante) {
+    public void agregarRegistro(CursoEstudiante registro) {
         try {
         
             try {
-                arregloNotas[indice++] = notaEstudiante;
+                arregloNotas[indice++] = registro;
                 
                 
                 //arregloNotas[indice] = notaEstudiante;
@@ -42,23 +44,15 @@ public class Nota {
         return indice;
     }
 
-    public double getNota(int i) {
+    public CursoEstudiante getNota(int i) {
         return arregloNotas[i];
     }
 
-    public double[] getArregloNotas() {
+    public CursoEstudiante[] getArregloNotas() {
         return arregloNotas;
     }
 
-    public void setArregloNotas(double[] arregloNotas) {
+    public void setArregloNotas(CursoEstudiante[] arregloNotas) {
         this.arregloNotas = arregloNotas;
-    }
-
-    public void agregarNota(double notaDigitada, String cicloDigitado) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public String getCiclo(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

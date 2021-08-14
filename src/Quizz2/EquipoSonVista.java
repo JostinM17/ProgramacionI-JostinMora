@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Semana13Trabajo;
+package Quizz2;
 
+import Semana13Trabajo.*;
 import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
 
@@ -12,14 +13,14 @@ import javax.swing.JTextArea;
  *
  * @author Jostin Mora
  */
-public class NotaVista {
-    private Poo.Mvc.Nota nota;
+public class EquipoSonVista {
+    private EquipoSonido equipoSonido;
 
-    public NotaVista(Poo.Mvc.Nota notaInstanciada) {
-        this.nota = notaInstanciada;
+    public EquipoSonVista(EquipoSonido equipoSonido) {
+        this.equipoSonido = notaInstanciada;
     }
 
-    NotaVista(Nota nota) {
+    EquipoSonVista(EquipoSonido nota) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

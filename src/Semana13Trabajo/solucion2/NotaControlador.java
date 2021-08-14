@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Semana13Trabajo;
+package Semana13Trabajo.solucion2;
 
 import Poo.Mvc.*;
 
@@ -13,11 +13,11 @@ import Poo.Mvc.*;
  */
 public class NotaControlador {
 
-    private Nota nota;
+    private ExpedienteEstudiante nota;
     private NotaVista nv;
     
     public NotaControlador(){
-        nota = new Nota(0);
+        nota = new ExpedienteEstudiante(0);
         nv = new NotaVista(nota);
     }
     
@@ -29,11 +29,8 @@ public class NotaControlador {
                 case 1:
                     if(nota.getArregloNotas().length==0){
                         int cant = nv.leaTamanoArreglo();
-                        double[] elNuevoArreglo = new double[cant];
+                        CursoEstudiante[] elNuevoArreglo = new CursoEstudiante[cant];
                         nota.setArregloNotas(elNuevoArreglo);
-                        
-                        String[] elNuevoArregloCiclos = new String[cant];
-                        nota.setArregloCiclos(elNuevoArregloCiclos);
                     }
                     
                     nv.leaNota();
