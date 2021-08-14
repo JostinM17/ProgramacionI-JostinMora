@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Poo.Mvc;
+package Semana13Trabajo;
+
+import Poo.Mvc.*;
 
 /**
  *
@@ -13,7 +15,7 @@ public class Tester {
     /**
  *
  * @author carlosandres.mendez
- */ 
+ */
     public static void main(String[] args) {
         NotaControlador c = new NotaControlador();
         c.iniciar();

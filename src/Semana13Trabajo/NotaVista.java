@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Poo.Mvc;
+package Semana13Trabajo;
 
 import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
@@ -12,12 +12,15 @@ import javax.swing.JTextArea;
  *
  * @author Jostin Mora
  */
-public class NotaVista{
+public class NotaVista {
+    private Poo.Mvc.Nota nota;
 
-    private Nota nota;
-
-    public NotaVista(Nota notaInstanciada) {
+    public NotaVista(Poo.Mvc.Nota notaInstanciada) {
         this.nota = notaInstanciada;
+    }
+
+    NotaVista(Nota nota) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     public int leaTamanoArreglo() {
